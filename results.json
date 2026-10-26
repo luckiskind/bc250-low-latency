@@ -1,0 +1,137 @@
+{
+  "measured_date": "2026-10-26",
+  "hardware": "AMD BC-250 P3.00, 8 cores/16 threads, existing 3.75GHz CPU and 1750MHz GDDR6 setting",
+  "kernel": "7.2.8-1.219-cachyos-bore-bc250",
+  "original_controlled_default": {
+    "runs": 3,
+    "samples_per_run": 1000,
+    "wake_mean_us": 99.987933333333,
+    "deadline_to_finish_mean_us": 188.0904
+  },
+  "default_on_validation": {
+    "runs": 3,
+    "samples_per_run": 1000,
+    "wake_mean_us": 5.758166666666667,
+    "deadline_to_finish_mean_us": 92.08833333333332,
+    "cases": [
+      {
+        "repeat": 1,
+        "ready": {
+          "event": "ready",
+          "cpu": 8,
+          "qos_us": -1,
+          "initial_global_qos_us": 1,
+          "original_timer_slack_ns": 1,
+          "effective_timer_slack_ns": 1,
+          "bytes": 268435456,
+          "period_us": 5000,
+          "loads_per_wakeup": 512
+        },
+        "complete": {
+          "event": "complete",
+          "samples": 1000,
+          "qos_us": -1,
+          "wake_mean_us": 5.9071,
+          "wake_p50_us": 5.227,
+          "wake_p95_us": 14.474,
+          "wake_p99_us": 15.514,
+          "wake_max_us": 31.722,
+          "batch_mean_ns_per_load": 168.9003,
+          "batch_p50_ns_per_load": 169.7109,
+          "batch_p99_ns_per_load": 176.4941,
+          "first_load_plus_clock_p50_ns": 207.0,
+          "deadline_to_finish_mean_us": 92.3841,
+          "deadline_to_finish_p99_us": 103.174,
+          "deadline_to_finish_max_us": 118.315,
+          "minor_faults": 0,
+          "major_faults": 0,
+          "missed_periods": 0,
+          "final_cursor": 2217389
+        },
+        "verified_thp_kb": 262144,
+        "final_temperature_c": 47.125
+      },
+      {
+        "repeat": 2,
+        "ready": {
+          "event": "ready",
+          "cpu": 8,
+          "qos_us": -1,
+          "initial_global_qos_us": 1,
+          "original_timer_slack_ns": 1,
+          "effective_timer_slack_ns": 1,
+          "bytes": 268435456,
+          "period_us": 5000,
+          "loads_per_wakeup": 512
+        },
+        "complete": {
+          "event": "complete",
+          "samples": 1000,
+          "qos_us": -1,
+          "wake_mean_us": 5.7473,
+          "wake_p50_us": 4.786,
+          "wake_p95_us": 14.017,
+          "wake_p99_us": 15.059,
+          "wake_max_us": 334.101,
+          "batch_mean_ns_per_load": 168.4211,
+          "batch_p50_ns_per_load": 169.123,
+          "batch_p99_ns_per_load": 175.7754,
+          "first_load_plus_clock_p50_ns": 204.0,
+          "deadline_to_finish_mean_us": 91.9789,
+          "deadline_to_finish_p99_us": 102.494,
+          "deadline_to_finish_max_us": 422.286,
+          "minor_faults": 0,
+          "major_faults": 0,
+          "missed_periods": 0,
+          "final_cursor": 2217389
+        },
+        "verified_thp_kb": 262144,
+        "final_temperature_c": 47.125
+      },
+      {
+        "repeat": 3,
+        "ready": {
+          "event": "ready",
+          "cpu": 8,
+          "qos_us": -1,
+          "initial_global_qos_us": 1,
+          "original_timer_slack_ns": 1,
+          "effective_timer_slack_ns": 1,
+          "bytes": 268435456,
+          "period_us": 5000,
+          "loads_per_wakeup": 512
+        },
+        "complete": {
+          "event": "complete",
+          "samples": 1000,
+          "qos_us": -1,
+          "wake_mean_us": 5.6201,
+          "wake_p50_us": 4.995,
+          "wake_p95_us": 14.1,
+          "wake_p99_us": 15.16,
+          "wake_max_us": 16.546,
+          "batch_mean_ns_per_load": 168.5193,
+          "batch_p50_ns_per_load": 169.125,
+          "batch_p99_ns_per_load": 176.3457,
+          "first_load_plus_clock_p50_ns": 204.0,
+          "deadline_to_finish_mean_us": 91.902,
+          "deadline_to_finish_p99_us": 102.469,
+          "deadline_to_finish_max_us": 104.526,
+          "minor_faults": 0,
+          "major_faults": 0,
+          "missed_periods": 0,
+          "final_cursor": 2217389
+        },
+        "verified_thp_kb": 262144,
+        "final_temperature_c": 47.125
+      }
+    ]
+  },
+  "limitations": [
+    "One board; synthetic intermittent workload",
+    "Follow-up default-on runs were not interleaved with a new control",
+    "Gaming and power effects unmeasured",
+    "No raw GDDR6 latency improvement demonstrated",
+    "Startup configuration checked; no subsequent reboot test"
+  ]
+}

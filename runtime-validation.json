@@ -1,0 +1,13 @@
+{
+  "packaged_source_sha256": "f21dd9d2d0ccbf6dd309351cacda3635abab085f229ce0fd9c032981e5f23600",
+  "generated_service_restrictions_tested": true,
+  "live_qos_descriptor_verified": true,
+  "service_timer_slack_ns": 1,
+  "temporary_service_stopped": true,
+  "temporary_runtime_file_removed": true,
+  "previous_aggregate_idle_request_preserved": true,
+  "existing_defaults_service_preserved": true,
+  "governor_and_overclock_configuration_unchanged": true,
+  "reboot_performed": false,
+  "persistent_project_installation_performed": false
+}
