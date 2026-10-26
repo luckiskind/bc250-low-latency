@@ -1,0 +1,15 @@
+name: Tests
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  installer:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - name: Test installer safety and lifecycle
+        run: python3 -m unittest discover -s tests -v
+      - name: Check source and benchmark
+        run: |
+          python3 -m py_compile bc250-latency.py
+          cc -Wall -Wextra -Werror -O2 -o /tmp/wakeup-bench tools/wakeup-bench.c
